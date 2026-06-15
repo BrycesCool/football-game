@@ -1,0 +1,7 @@
+﻿<Solution>
+  <Project Path="Gridiron.Editor.csproj" />
+  <Project Path="Gridiron.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Gridiron.Tests.EditMode.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+</Solution>

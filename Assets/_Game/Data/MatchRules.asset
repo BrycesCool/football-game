@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92bf4f1fa244244e82b4ec685899d47, type: 3}
+  m_Name: MatchRules
+  m_EditorClassIdentifier: Gridiron::Gridiron.MatchRules
+  drivesPerMatch: 3
+  pointsPerTD: 7
+  startOwnYardLine: 25
+  playClockSeconds: 6
+  racWindowSeconds: 1
+  resultBannerSeconds: 2.5
+  sackPenaltyYards: 5
+  bullet:
+    throwSpeed: 19
+    tMin: 0.4
+    tMax: 1.6
+    inaccuracyRadius: 0.35
+  lob:
+    throwSpeed: 12
+    tMin: 0.8
+    tMax: 2.6
+    inaccuracyRadius: 0.6
+  lobHoldThreshold: 0.25
+  gravityScale: 1.15
+  midBreakInaccuracyMultiplier: 1.5
+  chestHeight: 1.3
+  throwReleaseFallback: 1.4
+  wrBurstMultiplier: 1.1
+  catchRadius: 1.1
+  baseCatch: 0.95
+  contestPenalty: 0.35
+  contestDistance: 1.2
+  highBallPenalty: 0.15
+  highBallHeight: 2.2
+  tackleDistance: 0.8
+  cbCushion: 4.57
+  coverOffsetBehind: 0.8
+  coverOffsetBallSide: 0.3
+  cbCatchRadius: 1
+  cbBurstMultiplier: 1.05
+  beatenSeparation: 4
+  beatenPredictionTime: 0.5
+  softPushMaxSpeed: 2
+  accel: 8
+  brake: 14
+  turnRateDeg: 540
+  plantTurnRateDeg: 880
+  plantTurnWindow: 0.35
+  minTurnSpeedFactor: 0.45
+  cutSpeedFactor: 0.6
+  cutDecelRadius: 2.5
+  runClipNaturalSpeed: 5.254658
+  animSpeedDamp: 0.12
+  maxAnimSpeedMult: 2.2
+  pursuitStopDistance: 0.15
+  racDodgeOffset: 0.35
+  racDodgeWindow: 3
+  racDodgeInterval: 0.3
+  cbTargetSmoothTime: 0.1
+  cbWRMinDistance: 0.7
+  hipFlipDuration: 0.25
+  hipFlipSpeedFactor: 0.6
+  catchAttachLerp: 0.12
+  handsOnBallFallback: 0.3
+  tackleSequenceSeconds: 0.35
+  catchReach: 0.55
+  catchReachStride: 0.25
+  maxSecureGap: 0.35
+  noiseLateralFactor: 0.3
