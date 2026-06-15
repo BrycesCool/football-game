@@ -3,7 +3,157 @@ guid: 2c4d893774ecc0a4a95c59f93eedbf8f
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Apron_Turf
+    second: {fileID: 2100000, guid: f9c935233cd630b449bd08a122e817be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bench_Dark
+    second: {fileID: 2100000, guid: 7dfa217775b9cf349b1208aa6255570f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bench_Mat
+    second: {fileID: 2100000, guid: 8f29478a184ce8b428ad9ea0d9f2ddd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Board_Frame
+    second: {fileID: 2100000, guid: 679fbdfcc9b437e4d8e8c490ced5e03a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Board_Screen
+    second: {fileID: 2100000, guid: 68fbc0fbafa05c6429910bb98bd43a35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bowl_Riser
+    second: {fileID: 2100000, guid: c5cabb2fd47911d418172c5de4fa5eb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Canopy_Strut
+    second: {fileID: 2100000, guid: 91a4a9c07e04f2043ab0215e1313356c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Canopy_Top
+    second: {fileID: 2100000, guid: ffdeebc189f207740a23b5c589340ac3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Canopy_Under
+    second: {fileID: 2100000, guid: c47042505cb1f164ab4ad7c94ae9cafa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EndZone_A
+    second: {fileID: 2100000, guid: bca988654cba99d4d8994e4f091c5d04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EndZone_B
+    second: {fileID: 2100000, guid: d0538567e2c348b49b8f8377ac0fba0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FF_Grass
+    second: {fileID: 2100000, guid: 7f92333e4811488449de853177b14ae0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FF_White
+    second: {fileID: 2100000, guid: e2804559bf1be9f45820916f333c9d05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FF_Yellow
+    second: {fileID: 2100000, guid: 2022f2a63d9612e4db9c864b16f1a840, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FF_Yellow_Line
+    second: {fileID: 2100000, guid: 7a4e85bc82ce41740805e38543378b05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GoalPost_Pad
+    second: {fileID: 2100000, guid: 368276601863193448daa4404993f117, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground_Concrete
+    second: {fileID: 2100000, guid: 8070990f7ee1be040878d9d1ad938c27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PressBox_Body
+    second: {fileID: 2100000, guid: 0d43bb63f31c52046a4a56a3cb436015, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PressBox_Glass
+    second: {fileID: 2100000, guid: 971e8dedb4b275f429f74bacfde354f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Prop_Cooler
+    second: {fileID: 2100000, guid: cd6a13a889bc5804f871b5a00e7c1452, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Prop_Table
+    second: {fileID: 2100000, guid: e23c29433b84d834eb31937063aa8fc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Prop_Trunk
+    second: {fileID: 2100000, guid: 641ea593787efb648981e1ec3ef2643f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pylon_Orange
+    second: {fileID: 2100000, guid: c8ccab3b21a1af5488c152faa48f1d25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rack_Metal
+    second: {fileID: 2100000, guid: 3f85e1c18540cf546af575d59902f3b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rail_Metal
+    second: {fileID: 2100000, guid: b292fc26c55e0f04e846aba98be00773, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ribbon_LED
+    second: {fileID: 2100000, guid: f6bbceafb8500ac40b45f3cde4173af0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seat_Plastic
+    second: {fileID: 2100000, guid: 3750f423ae8e03a459c8287e75d0b5e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stadium_Concrete
+    second: {fileID: 2100000, guid: 6e0d1ce22dcfaef4b8f6a28e4ac83670, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Dark
+    second: {fileID: 2100000, guid: 80772e3747c3a42439a54bccd5794249, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Pad_A
+    second: {fileID: 2100000, guid: 71ddb3de170aa404789a9488ba46cc9c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
