@@ -122,4 +122,19 @@ namespace Gridiron
                 overlayLayer = animator.GetLayerIndex(overlayLayerName);
                 if (overlayLayer < 0) { manageOverlay = false; return; } // no such layer on this character
             }
-            if (!Mathf.Approximately(overlayWeight, overl
+            if (!Mathf.Approximately(overlayWeight, overlayTarget))
+            {
+                float step = Time.deltaTime / Mathf.Max(0.001f, overlayBlendTime);
+                overlayWeight = Mathf.MoveTowards(overlayWeight, overlayTarget, step);
+                ApplyOverlay();
+            }
+        }
+
+
+        // ---- AnimationEvent receivers (names must match clip events exactly) ----
+        public void ReleaseBall() => ReleaseBallEvent?.Invoke();
+        public void HandsOnBall() => HandsOnBallEvent?.Invoke();
+        public void SwatContact() => SwatContactEvent?.Invoke();
+        public void PlantFoot() => PlantFootEvent?.Invoke();
+    }
+}
