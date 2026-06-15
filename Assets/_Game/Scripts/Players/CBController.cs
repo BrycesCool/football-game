@@ -94,8 +94,7 @@ namespace Gridiron
             if (animDriver != null)
             {
                 animDriver.floatDampTime = Rules.animSpeedDamp;
-                animDriver.SetSpeed(0f);
-                animDriver.SetBackpedal(false);
+                animDriver.ResetLocomotion(); // zero Speed + MoveX/MoveZ so he holds Defender Stance pre-snap (not a moving blend)
             }
         }
 
@@ -127,6 +126,15 @@ namespace Gridiron
         {
             if (!active) return;
             float dt = Mathf.Min(Time.deltaTime, 0.04f); // clamp dt spikes
+            var mmCB = MatchManager.Instance;
+            if (mmCB != null && mmCB.resolver != null && mmCB.resolver.ResolvedThisPlay)
+            {
+                // Play is over (catch / incomplete / INT) — stop chasing, settle to the defender stance.
+                animDriver?.SetSpeed(0f, dt);
+                animDriver?.SetMoveLocal(0f, 0f, dt);
+                animDriver?.SetBackpedal(false);
+                return;
+            }
             var rules = Rules;
             CBCommand cmd = brain.Tick(this, dt);
 

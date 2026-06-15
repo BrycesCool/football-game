@@ -67,8 +67,8 @@ MonoBehaviour:
   racDodgeInterval: 0.3
   cbTargetSmoothTime: 0.1
   cbWRMinDistance: 0.7
-  hipFlipDuration: 0.25
-  hipFlipSpeedFactor: 0.6
+  hipFlipDuration: 0.12
+  hipFlipSpeedFactor: 0.85
   catchAttachLerp: 0.12
   handsOnBallFallback: 0.3
   tackleSequenceSeconds: 0.35

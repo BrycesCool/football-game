@@ -68,6 +68,17 @@ namespace Gridiron
             if (Has("Backpedal")) animator.SetBool("Backpedal", value);
         }
 
+        /// <summary>Instant locomotion reset — zero Speed and the 2D MoveX/MoveZ (and SpeedMult) so a
+        /// character snaps to its idle/stance pose at play reset instead of a stale moving blend.</summary>
+        public void ResetLocomotion()
+        {
+            if (Has("Speed")) animator.SetFloat("Speed", 0f);
+            if (Has("MoveX")) animator.SetFloat("MoveX", 0f);
+            if (Has("MoveZ")) animator.SetFloat("MoveZ", 0f);
+            if (Has("SpeedMult")) animator.SetFloat("SpeedMult", 1f);
+            if (Has("Backpedal")) animator.SetBool("Backpedal", false);
+        }
+
         public void Trigger(string name)
         {
             if (Has(name)) animator.SetTrigger(name);
@@ -111,19 +122,4 @@ namespace Gridiron
                 overlayLayer = animator.GetLayerIndex(overlayLayerName);
                 if (overlayLayer < 0) { manageOverlay = false; return; } // no such layer on this character
             }
-            if (!Mathf.Approximately(overlayWeight, overlayTarget))
-            {
-                float step = Time.deltaTime / Mathf.Max(0.001f, overlayBlendTime);
-                overlayWeight = Mathf.MoveTowards(overlayWeight, overlayTarget, step);
-                ApplyOverlay();
-            }
-        }
-
-
-        // ---- AnimationEvent receivers (names must match clip events exactly) ----
-        public void ReleaseBall() => ReleaseBallEvent?.Invoke();
-        public void HandsOnBall() => HandsOnBallEvent?.Invoke();
-        public void SwatContact() => SwatContactEvent?.Invoke();
-        public void PlantFoot() => PlantFootEvent?.Invoke();
-    }
-}
+            if (!Mathf.Approximately(overlayWeight, overl

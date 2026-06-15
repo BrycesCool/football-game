@@ -296,7 +296,7 @@ BlendTree:
   m_Name: Locomotion2D
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 4061839508520268033, guid: d746c9c90c3eb644a8be01d7ba2961b2, type: 3}
+    m_Motion: {fileID: -203655887218126122, guid: 3abdb8e07817d284aac844145f805bb1, type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -341,7 +341,7 @@ BlendTree:
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
-  m_BlendType: 2
+  m_BlendType: 3
 --- !u!1102 &3631585758140653104
 AnimatorState:
   serializedVersion: 6
